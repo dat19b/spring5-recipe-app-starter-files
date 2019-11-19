@@ -1,13 +1,5 @@
 public class Notes {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    // relation to recipe -> no cascading meaning: i can delete a note freely
-    @OneToOne
+  
     private Recipe recipe;
 
-    // becomes a CLOB (Character Large object) in db
-    @Lob
-    private String recipeNotes;
 }
