@@ -1,5 +1,5 @@
 public class Notes {
-  
-    private Recipe recipe;
+
+	private String description;
 
 }
